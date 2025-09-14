@@ -22,7 +22,7 @@ sumR_num <- function(df, var) {
 }
 
 group_stats <- function(df, var, num_stats) {
-  var_name <- paste(var, "Qartile")
+  var_name <- paste(var, "Quartile")
 
   quart <- df |>
     mutate((!!sym(var_name)) := case_wen(
