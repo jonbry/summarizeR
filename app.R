@@ -28,9 +28,7 @@ ui <- fluidPage(
   )
 )
 server <- function(input, output) {
-  observeEvent(input$submit, {
-    
-  })
+  observeEvent(input$submit, {})
 }
 
 shinyApp(ui = ui, server = server)
